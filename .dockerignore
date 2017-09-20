@@ -5,7 +5,7 @@ Dockerfile*
 .env
 public/assets/**/*
 
-tags
+.tags
 gems.tags
 erl_crash.dump
 public/erl_crash.dump
