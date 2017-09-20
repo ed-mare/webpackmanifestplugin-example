@@ -1,9 +1,0 @@
-{
-  "common.css": "/assets/stylesheets/common.css",
-  "common.js": "/assets/javascripts/common.js",
-  "images/spotify.png": "/assets/images/spotify.png",
-  "images/tripadvisor.png": "/assets/images/tripadvisor.png",
-  "images/youtube.png": "/assets/images/youtube.png",
-  "main.css": "/assets/stylesheets/main.css",
-  "main.js": "/assets/javascripts/main.js"
-}
