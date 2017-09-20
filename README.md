@@ -9,6 +9,8 @@ It is known to work with these dependencies:
 - NPM 5.3.0
 - Webpack 3.5.4
 
+It uses ES6 which is transpiled by Babel.
+
 **Run this app in development environment only.**
 
 ## Setup
@@ -60,3 +62,23 @@ npm install
 bundle install
 node node_modules/webpack/bin/webpack
 ```
+
+## Notes
+
+#### Configurations
+
+Configurations are in config/initializers/webpack_manifest_plugin.rb
+
+#### Webpack Configs
+
+There are two webpack configs:
+
+- webpack.config.js does not version assets. For development.
+- webpack.config.prod.js versions assets. For production.
+
+#### Files
+
+- Assets folder structure is the same as a standard Rails app but files are imported ES6 style.
+- Assets are copied to public/assets, same as standard Rails app.
+- The manifest.json file is created in public/assets.
+- views/layouts/application.html.erb, views/main/application.html.erb use the view helper.

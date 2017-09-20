@@ -8,8 +8,7 @@ end
 gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.7'
 gem 'jbuilder', '~> 2.5'
-gem 'webpack_manifest_plugin', git: 'https://github.com/ed-mare/webpack_manifest_plugin.git'
-gem 'oj'
+gem 'webpack_manifest_plugin'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
