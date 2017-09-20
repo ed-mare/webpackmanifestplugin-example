@@ -1,0 +1,22 @@
+<%= content_for :header do %>
+  <link href="<%= webpack_manifest_path("main.css") %>" rel="stylesheet" type="text/css">
+<% end %>
+
+<h1>This is the main page</h1>
+
+<h2>This should be red from main.css</h2>
+<h3>This should be blue from common.css</h3>
+
+<p>This is a background image defined in main.css.</p>
+<div class="spotify_icon"></div>
+
+<p>This is a background image defined in common.css.</p>
+<div class="youtube_icon"></div>
+
+<p>This image is added directly to the erb template. Be sure to import
+  these images. This image is imported in common.js.</p>
+<img src='<%= webpack_manifest_path("images/tripadvisor.png") %>' />
+
+<%= content_for :footer do %>
+   <script src="<%= webpack_manifest_path("main.js") %>"></script>
+<% end %>

@@ -1,0 +1,11 @@
+.git*
+log/*
+tmp/*
+Dockerfile*
+.env
+public/assets/**/*
+
+tags
+gems.tags
+erl_crash.dump
+public/erl_crash.dump

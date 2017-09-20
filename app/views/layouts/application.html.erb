@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebpackmanifestpluginExample</title>
+    <%= csrf_meta_tags %>
+    <link href="<%= webpack_manifest_path("common.css") %>" rel="stylesheet" type="text/css">
+    <%= yield :header %>
+  </head>
+  <body>
+    <%= yield %>
+    <script src="<%= webpack_manifest_path("common.js") %>"></script>
+    <%= yield :footer %>
+  </body>
+</html>
