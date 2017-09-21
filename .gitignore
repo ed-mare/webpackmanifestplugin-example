@@ -16,6 +16,5 @@
 /public/assets/*
 .tags
 .tags*
-/public/assets/**/*
 
 .byebug_history

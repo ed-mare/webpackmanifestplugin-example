@@ -3,7 +3,6 @@ log/*
 tmp/*
 Dockerfile*
 .env
-public/assets/**/*
 
 .tags
 gems.tags
