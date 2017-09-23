@@ -5,7 +5,7 @@ It is known to work with these dependencies:
 
 - Rails 5.1.x
 - Ruby 2.4.1
-- Node v0.10.29
+- Node v8.4.0
 - NPM 5.3.0
 - Webpack 3.5.4
 
