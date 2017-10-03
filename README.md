@@ -48,7 +48,7 @@ Checkout this repository, `cd` to the root of the app and run:
 docker-compose build
 
 # run this if public/assets aren't created when the image is built
-docker-compose run --rm web bin/bash
+docker-compose run --rm web /bin/bash
 
 # install packages
 npm install
