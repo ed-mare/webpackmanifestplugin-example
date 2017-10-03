@@ -48,8 +48,18 @@ Checkout this repository, `cd` to the root of the app and run:
 docker-compose build
 
 # run this if public/assets aren't created when the image is built
-docker-compose run --rm web node node_modules/webpack/bin/webpack
+docker-compose run --rm web bin/bash
 
+# install packages
+npm install
+
+# build development assets
+node node_modules/webpack/bin/webpack
+
+# or build production assets
+node node_modules/webpack/bin/webpack --config webpack.config.prod.js
+
+# in another terminal window, cd to root of app and
 # start the server - go to http://localhost:3000
 docker-compose up
 ```

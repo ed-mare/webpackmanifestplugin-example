@@ -8,10 +8,13 @@ WORKDIR /myapp
 ADD . /myapp
 
 # Install ruby gems and javascript packages
-RUN bundle install && npm install
+RUN bundle install
+
+# Skip for now
+# RUN npm install
 
 # Create dev assets
-RUN node node_modules/webpack/bin/webpack
+# RUN node node_modules/webpack/bin/webpack
 
 # Create production assets
 # RUN node node_modules/webpack/bin/webpack --config webpack.config.prod.js
