@@ -16,6 +16,8 @@ end
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'bundle-audit', '~> 0.1'
+  gem 'brakeman', '~> 4.2'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
